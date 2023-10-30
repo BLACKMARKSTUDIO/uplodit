@@ -8,7 +8,7 @@
     
     <center>
       <h1>Uplodit</h1>
-      <?php
+      <php
       
 if ( $_POST[ "action" ] == "Upload" ) {
     $uploaded_file_name_tmp = $_FILES[ 'myfile' ][ 'tmp_name' ];
@@ -19,7 +19,7 @@ if ( $_POST[ "action" ] == "Upload" ) {
       
     echo "<p>" . $uploaded_file_name . "을(를) 업로드하였습니다.</p>";
   }
-?>
+>
       
 <form action="" method="POST" enctype="multipart/form-data">
   <p><input type="file" name="myfile"></p>
