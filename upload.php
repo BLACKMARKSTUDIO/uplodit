@@ -28,5 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["file"])) {
     } else {
         echo "지원하지 않는 파일 형식입니다. 허용된 확장자: " . implode(", ", $allowedExtensions);
     }
+} else {
+    echo "올바른 요청이 아닙니다.";
 }
 ?>
